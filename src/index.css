@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-size: 30px;
+}
+
+.list, .del {
+  background-color: paleturquoise;
+}
+
+li {
+  list-style: none;
+  padding: 25px 0 25px 10px;
+  position: relative;
+  cursor: default;
+}
+
+li:hover {
+  background-color: lightsteelblue;
+}
+
+.del:hover {
+  position: absolute;
+  background-color: darkslategrey;
+}
+
+.del {
+  width: 80px;
+  height: 100%;
+  right: 0px;
+  top: 0;
+}
+
+.del:before {
+  content: "\2718";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  line-height: 85px;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: greenyellow;
+  text-align: center;
+  padding-top: 0;
+  height: 240px;
+}
+
+.header__task {
+  display: flex;
+  justify-content: center;
+}
+
+.header__text input {
+  font-size: 25px;
+  padding: 15px 10px 10px 10px;
+  min-width: 450px;
+}
+
+.header__button input {
+  font-size: 25px;
+  padding: 15px 25px 10px 25px;
+  min-width: 150px;
+}
+
+.header__button input:hover {
+  background-color: lightsteelblue;
+}
+
+p {
+  text-align: left;
+  padding: 5px 0 0 10px;
+  cursor: default;
+  font-size: 25px;
+}
+
+h1 {
+  padding: 50px 0 25px 0;
+}
+
+.checked{
+  text-decoration: line-through;
+  background: slategray;
+}
+
+.error_message{
+  color:red;
+}
+
+.task_text{
+  box-shadow: inset 0px 0px 0px 3px red;
+}
